@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuzz Gradients</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <style>
+    #container {
+      position: relative;
+      width: 900px;
+      height: 900px;
+      overflow: hidden;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* width: 750px;
+      height: 750px; */
+      mix-blend-mode: hard-light;
+    }
+
+    #imgred {
+      z-index: 3;
+      /* transform-origin: "50% 25%"; */
+    }
+
+    #imgblue {
+      z-index: 4;
+      /* transform-origin: "50% 75%"; */
+    }
+
+    #imggreen {
+      z-index: 2;
+    }
+
+    #imgyellow {
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="imgred" src="images/red.png">
+    <img id="imgblue" src="images/blue.png">
+    <img id="imggreen" src="images/green.png">
+    <img id="imgyellow" src="images/yellow.png">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
