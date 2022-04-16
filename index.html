@@ -14,25 +14,27 @@
       position: relative;
       width: 900px;
       height: 900px;
-      overflow: hidden;
+      /* overflow:  */
     }
 
     img {
       position: absolute;
       top: 0;
       left: 0;
-      /* width: 750px;
-      height: 750px; */
-      mix-blend-mode: hard-light;
+      width: 900px;
+      height: 900px;
+      filter: saturate(4);
+      /* filter: contrast(2); */
+      mix-blend-mode: luminosity;
     }
 
     #imgred {
-      z-index: 3;
+      z-index: 4;
       /* transform-origin: "50% 25%"; */
     }
 
     #imgblue {
-      z-index: 4;
+      z-index: 3;
       /* transform-origin: "50% 75%"; */
     }
 
